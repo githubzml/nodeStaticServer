@@ -213,6 +213,14 @@ nodemon@^3.1.1:
     touch "^3.1.0"
     undefsafe "^2.0.5"
 
+nodestudystaticserver@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/nodestudystaticserver/-/nodestudystaticserver-1.0.1.tgz"
+  integrity sha512-3BWlJBmiUz8/CGOAfnQ/b177NC7r41YpvXmyCtptHg/3vHiUDinB77NEHalpDOm3giW3D8MUNq3rrHsUMJRKMQ==
+  dependencies:
+    handlebars "^4.7.8"
+    yargs "^17.7.2"
+
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/normalize-path/-/normalize-path-3.0.0.tgz"

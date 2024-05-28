@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "cus_server": "bin/server"
+    "cus_server": "bin/cus_server"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "handlebars": "^4.7.8",
+    "nodestudystaticserver": "^1.0.1",
     "yargs": "^17.7.2"
   }
 }
