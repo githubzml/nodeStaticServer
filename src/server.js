@@ -2,6 +2,7 @@ const path = require("path");
 const http = require("http");
 const conf = require("../config/index");
 const route = require("./file_path");
+const autoOpen = require("./auto_open");
 
 class Server {
   constructor(config) {
@@ -18,9 +19,9 @@ class Server {
     });
 
     server.listen(this.conf.port, this.conf.hostname, () => {
-      console.log(
-        `server is running at http://${this.conf.hostname}:${this.conf.port}`
-      );
+      const url = `http://${this.conf.hostname}:${this.conf.port}`;
+      console.log(`server is running at http://${url}`);
+      autoOpen(url);
     });
   }
 }
