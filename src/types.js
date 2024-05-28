@@ -17,12 +17,8 @@ const fileType = {
   md: "text/markdown",
 };
 
-console.log(333);
-
 module.exports = function (filePath) {
-  console.log("filePath", filePath);
   const ext = path.extname(filePath).split(".").pop().toLocaleLowerCase();
-  console.log("ext", ext);
   if (!ext) return filePath;
   return fileType[ext] || fileType["txt"];
 };

@@ -19,8 +19,7 @@ class Server {
     });
 
     server.listen(this.conf.port, this.conf.hostname, () => {
-      const url = `http://${this.conf.hostname}:${this.conf.port}`;
-      console.log(`server is running at http://${url}`);
+      let url = `http://${this.conf.hostname}:${this.conf.port}`;
       autoOpen(url);
     });
   }
